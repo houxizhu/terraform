@@ -1,0 +1,41 @@
+## overview
+This project creates
+ - 1 x vpc
+ - 2 x public subnets
+ - 2 x private subnets
+ - 2 x datanase subnets
+ - 1 x internet gateway
+ - 1 x route table
+ - 6 route table associations
+
+## how to deploy
+```shell
+$ terraform init
+$ terraform.exe apply --var-file=region-vpc.tfvars
+$ terraform.exe destroy --var-file=region-vpc.tfvars
+```
+
+## workspace
+```shell
+➜  vpc git:(main) ✗ terraform workspace show
+default
+```
+
+## state file
+```shell
+$ terraform apply -var-file=tf/region-vpc.tfvars -state=tf/region-vpc.tfstate
+```
+
+
+## diagram
+```ascii
+vpc             -----------------
+                |      igw      |
+                -----------------
+public subnet   |   a   |   b   |
+                -----------------
+private subnet  |   a   |   b   |
+                -----------------
+database subnet |   a   |   b   |
+                -----------------
+```
