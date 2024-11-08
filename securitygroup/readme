@@ -1,0 +1,15 @@
+
+
+## workspace
+```shell
+➜  git:(main) ✗ terraform workspace show
+default
+```
+
+## deploy
+```
+$ terraform apply -var-file=tf/region-vpc-port.tfvars -state=tf/region-vpc-port.tfstate
+```
+### bitbucket whitelist reference
+https://bitbucket.org/blog/new-ip-addresses-bitbucket-cloud
+https://support.atlassian.com/bitbucket-cloud/docs/what-are-the-bitbucket-cloud-ip-addresses-i-should-use-to-configure-my-corporate-firewall/
