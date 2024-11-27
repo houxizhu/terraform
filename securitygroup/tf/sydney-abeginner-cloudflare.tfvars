@@ -2,10 +2,10 @@ aws_profile     = "default"
 aws_account_no  = "471112672291"
 aws_region      = "ap-southeast-2"
 tag_type        = "devops"
-vpc_name        = "xhou"
+vpc_name        = "abeginner"
 this_name       = "port"
 jira            = "jira"
-owner           = "xhou"
+owner           = "abeginner"
 openport        = 443
 
 ### https://www.cloudflare.com/ips-v4/

@@ -12,11 +12,11 @@ data "aws_vpc" "vpc" {
 
 resource "aws_security_group" "sg" {
   name        = "${var.this_name}-${var.region_city[var.aws_region]}-${var.vpc_name}-${var.openport}"
-  description = "xhou - ${var.openport}"
+  description = "port - ${var.openport}"
   vpc_id      = data.aws_vpc.vpc.id
 
   ingress {
-    description      = "xhou - ${var.openport}"
+    description      = "port - ${var.openport}"
     from_port        = var.openport
     to_port          = var.openport
     protocol         = "tcp"
@@ -38,7 +38,7 @@ resource "aws_security_group" "sg" {
     deployment = "terraform"
     jira       = var.jira
     owner      = var.owner
-    terraform  = "xhou/securitygroup/port"
+    terraform  = "terraform/securitygroup/port"
   }
 
   lifecycle {
