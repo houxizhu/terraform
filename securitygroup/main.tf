@@ -37,7 +37,7 @@ resource "aws_security_group" "sg" {
     type       = var.tag_type
     deployment = "terraform"
     jira       = var.jira
-    owner      = var.owner
+    created_by = var.created_by
     terraform  = "terraform/securitygroup/port"
   }
 

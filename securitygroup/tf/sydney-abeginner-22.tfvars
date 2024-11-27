@@ -5,5 +5,5 @@ tag_type        = "devops"
 vpc_name        = "abeginner"
 this_name       = "port"
 jira            = "jira"
-owner           = "abeginner"
+created_by      = "abeginner"
 openport        = 22

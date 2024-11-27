@@ -7,7 +7,7 @@ variable "this_name" {}
 variable "whitelist_cidrs" {}
 variable "openport" {}
 variable "jira" {}
-variable "owner" {}
+variable "created_by" {}
 
 variable "region_city" {
   description = "to map aws region to aws city name"
