@@ -2,9 +2,9 @@ aws_profile     = "default"
 aws_account_no  = "471112672291"
 aws_region      = "ap-southeast-2"
 tag_type        = "devops"
-this_name       = "xhou"
-jira            = "jira-xhou"
-owner           = "xhou"
+this_name       = "abeginner"
+jira            = "jira-no."
+created_by      = "abeginner"
 
 vpc_cidr = "10.100.0.0/16"
 public_subnet_cidrs   = ["10.100.10.0/24", "10.100.11.0/24"]

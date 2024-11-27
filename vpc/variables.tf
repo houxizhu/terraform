@@ -4,7 +4,7 @@ variable "aws_region" {}
 variable "tag_type" {}
 variable "this_name" {}
 variable "jira" {}
-variable "owner" {}
+variable "created_by" {}
 
 variable "vpc_cidr" {
   description = "The IP range to attribute to the virtual network."
