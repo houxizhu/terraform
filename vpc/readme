@@ -36,6 +36,4 @@ public subnet   |   a   |   b   |
                 -----------------
 private subnet  |   a   |   b   |
                 -----------------
-database subnet |   a   |   b   |
-                -----------------
 ```

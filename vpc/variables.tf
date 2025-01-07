@@ -3,7 +3,7 @@ variable "aws_account_no" {}
 variable "aws_region" {}
 variable "tag_type" {}
 variable "this_name" {}
-variable "jira" {}
+variable "ticket" {}
 variable "created_by" {}
 
 variable "vpc_cidr" {
