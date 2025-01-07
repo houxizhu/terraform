@@ -17,7 +17,3 @@ variable "private_subnet_cidrs" {
   description = "The IP ranges to use for the private subnets in your VPC."
   type = list
 }
-variable "database_subnet_cidrs" {
-  description = "The IP ranges to use for the database subnets in your VPC."
-  type = list
-}
