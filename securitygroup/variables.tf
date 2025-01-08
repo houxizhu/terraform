@@ -6,7 +6,7 @@ variable "tag_type" {}
 variable "this_name" {}
 variable "whitelist_cidrs" {}
 variable "openport" {}
-variable "jira" {}
+variable "ticket" {}
 variable "created_by" {}
 
 variable "region_city" {

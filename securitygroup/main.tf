@@ -36,7 +36,7 @@ resource "aws_security_group" "sg" {
     customer   = "${var.this_name}"
     type       = var.tag_type
     deployment = "terraform"
-    jira       = var.jira
+    ticket     = var.ticket
     created_by = var.created_by
     terraform  = "terraform/securitygroup/port"
   }
