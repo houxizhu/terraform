@@ -1,0 +1,13 @@
+aws_profile       = "default"
+aws_account_no    = "471112672291"
+aws_region        = "ap-southeast-2"
+tag_type          = "devops"
+vpc_name          = "abeginner"
+sg_name           = "port-sydney-abeginner-443"
+this_name         = "ansible"
+key_name          = "ed25519sydney"
+aws_ami_prefix    = "al2023-ami-2023"
+ec2_instance_type = "t3a.nano"
+volume_size       = 32
+ticket            = "no"
+created_by        = "abeginner"
