@@ -17,8 +17,8 @@ module "vpc" {
   enable_dns_hostnames = true
 
   tags = {
-    Environment = var.tag_type
-    type        = var.tag_type
     deployment  = "terraform"
+    created_by  = var.created_by
+    website     = var.website
   }
 }

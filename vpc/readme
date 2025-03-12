@@ -11,8 +11,8 @@ This project creates
 ## how to deploy
 ```shell
 $ terraform init
-$ terraform.exe apply --var-file=region-vpc.tfvars
-$ terraform.exe destroy --var-file=region-vpc.tfvars
+$ terraform.exe apply --var-file=this_name.tfvars
+$ terraform.exe destroy --var-file=this_name.tfvars
 ```
 
 ## workspace
@@ -23,7 +23,7 @@ default
 
 ## state file
 ```shell
-$ terraform apply -var-file=tf/region-vpc.tfvars -state=tf/region-vpc.tfstate
+$ terraform apply -var-file=tf/this_name.tfvars -state=tf/this_name.tfstate
 ```
 
 

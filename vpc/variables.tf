@@ -1,10 +1,9 @@
 variable "aws_profile" {}
 variable "aws_account_no" {}
 variable "aws_region" {}
-variable "tag_type" {}
 variable "this_name" {}
-variable "ticket" {}
 variable "created_by" {}
+variable "website" {}
 
 variable "vpc_cidr" {
   description = "The IP range to attribute to the virtual network."
