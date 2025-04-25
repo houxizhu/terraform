@@ -1,10 +1,9 @@
 locals {
   tags = {
     Name            = var.this_name
-    type            = var.tag_type
     deployment      = "terraform"
-    ticket          = var.ticket
     created_by      = var.created_by
+    website         = var.website
   }
 }
 
@@ -75,7 +74,7 @@ resource "aws_instance" "ec2" {
   ami                         = ( var.ami_id == "" )? data.aws_ami.ami.id : var.ami_id
   instance_type               = var.ec2_instance_type
   key_name                    = ( var.key_name != "" )? var.key_name : var.aws_key_name[var.aws_region]
-  iam_instance_profile        = var.iam_instance_profile_name
+  #iam_instance_profile        = var.iam_instance_profile_name
 
   subnet_id                   = data.aws_subnets.subnets.ids[0]
   associate_public_ip_address = true

@@ -1,0 +1,12 @@
+aws_profile       = "default"
+aws_account_no    = "471112672291"
+aws_region        = "ap-southeast-2"
+vpc_name          = "t_abeginner"
+sg_name           = "t_abeginner-sydney-port-443"
+this_name         = "t_rhel810"
+key_name          = "a_abeginner_ed25519"
+aws_ami_prefix    = "RHEL-8.10.0_HVM"
+ec2_instance_type = "t2.micro"
+volume_size       = 8
+created_by        = "adevopsbeginner"
+website           = "https://www.youtube.com/@adevopsbeginner"

@@ -3,10 +3,9 @@ variable "aws_account_no" {}
 variable "aws_region" {}
 variable "vpc_name" {}
 variable "sg_name" {}
-variable "tag_type" {}
 variable "this_name" {}
-variable "ticket" {}
 variable "created_by" {}
+variable "website" {}
 
 variable "aws_ami_prefix" {}
 variable "ami_id" {

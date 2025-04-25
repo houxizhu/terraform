@@ -8,7 +8,7 @@ this_name         = "rhel79"
 key_name          = "ed25519ansible"
 aws_ami_prefix    = "ProComputers RHEL-7.9-x86_64-Minimal-10GiB-HVM" ### "ami-0196b42c97b6d9dde"
 ec2_instance_type = "t3a.medium"
-volume_size       = 32
+volume_size       = 8
 ticket            = "no"
 created_by        = "abeginner"
 
