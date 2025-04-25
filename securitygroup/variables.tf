@@ -2,12 +2,11 @@ variable "aws_profile" {}
 variable "aws_account_no" {}
 variable "aws_region" {}
 variable "vpc_name" {}
-variable "tag_type" {}
 variable "this_name" {}
 variable "whitelist_cidrs" {}
 variable "openport" {}
-variable "ticket" {}
 variable "created_by" {}
+variable "website" {}
 
 variable "region_city" {
   description = "to map aws region to aws city name"

@@ -11,7 +11,7 @@ data "aws_vpc" "vpc" {
 }
 
 resource "aws_security_group" "sg" {
-  name        = "${var.this_name}-${var.region_city[var.aws_region]}-${var.vpc_name}-${var.openport}"
+  name        = "${var.vpc_name}-${var.region_city[var.aws_region]}-${var.this_name}-${var.openport}"
   description = "port - ${var.openport}"
   vpc_id      = data.aws_vpc.vpc.id
 
@@ -32,13 +32,12 @@ resource "aws_security_group" "sg" {
   }
 
   tags = {
-    Name       = "${var.this_name}-${var.region_city[var.aws_region]}-${var.vpc_name}-${var.openport}"
-    customer   = "${var.this_name}"
-    type       = var.tag_type
+    Name       = "${var.vpc_name}-${var.region_city[var.aws_region]}-${var.this_name}-${var.openport}"
+    this_name  = "${var.this_name}"
     deployment = "terraform"
-    ticket     = var.ticket
-    created_by = var.created_by
     terraform  = "terraform/securitygroup/port"
+    created_by = var.created_by
+    website    = var.website
   }
 
   lifecycle {

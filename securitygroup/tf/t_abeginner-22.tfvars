@@ -1,9 +1,8 @@
 aws_profile     = "default"
 aws_account_no  = "471112672291"
 aws_region      = "ap-southeast-2"
-tag_type        = "devops"
-vpc_name        = "abeginner"
+vpc_name        = "t_abeginner"
 this_name       = "port"
-ticket          = "no"
-created_by      = "abeginner"
+created_by      = "adevopsbeginner"
+website         = "https://www.youtube.com/@adevopsbeginner"
 openport        = 22
