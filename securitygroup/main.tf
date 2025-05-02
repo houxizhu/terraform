@@ -37,7 +37,7 @@ resource "aws_security_group" "sg" {
     deployment = "terraform"
     terraform  = "terraform/securitygroup/port"
     created_by = var.created_by
-    website    = var.website
+    link       = var.link
   }
 
   lifecycle {
