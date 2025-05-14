@@ -3,7 +3,7 @@ locals {
     Name            = var.this_name
     deployment      = "terraform"
     created_by      = var.created_by
-    website         = var.website
+    link            = var.link
   }
 }
 

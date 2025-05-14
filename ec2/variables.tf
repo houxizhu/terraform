@@ -5,7 +5,7 @@ variable "vpc_name" {}
 variable "sg_name" {}
 variable "this_name" {}
 variable "created_by" {}
-variable "website" {}
+variable "link" {}
 
 variable "aws_ami_prefix" {}
 variable "ami_id" {
@@ -15,10 +15,10 @@ variable "ami_id" {
 
 variable "ec2_instance_type" {}
 variable "volume_size" {
-  default = 32
+  default = 16
 }
 variable "iam_instance_profile_name" {
-  default = "whichManagedInstanceRoleforSSM"
+  default = "eks-access-role"
 }
 
 variable "key_name" { 
@@ -31,16 +31,6 @@ variable "aws_key_name" {
   type        = map(string)
 
   default = {
-    eu-west-1      = "keyEUW1ed25519"
-    eu-central-1   = "keyEUC1ed25519"
-    us-west-1      = "keyUSW1ed25519"
-    us-west-2      = "keyUSW2ed25519"
-    us-east-1      = "keyUSE1ed25519"
-    us-east-2      = "keyUSE1ed25519"
-    ca-central-1   = "keyCAC1ed25519"
-    ap-south-1     = "keyAPS1ed25519"
-    ap-northeast-1 = "keyAPNE1ed25519"
-    ap-southeast-2 = "keyAPSE2ed25519"
-    me-south-1     = "keyMES1ed25519"
+    ap-southeast-2 = "t_abeginner_ed25519"
   }
 }
