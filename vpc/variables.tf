@@ -3,7 +3,7 @@ variable "aws_account_no" {}
 variable "aws_region" {}
 variable "this_name" {}
 variable "created_by" {}
-variable "website" {}
+variable "link" {}
 
 variable "vpc_cidr" {
   description = "The IP range to attribute to the virtual network."
