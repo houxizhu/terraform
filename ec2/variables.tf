@@ -18,7 +18,7 @@ variable "volume_size" {
   default = 16
 }
 variable "iam_instance_profile_name" {
-  default = "eks-access-role"
+  default = "eks-node-instance-profile"
 }
 
 variable "key_name" { 

@@ -11,4 +11,4 @@ ec2_instance_type = "t3a.medium"
 volume_size       = 8
 created_by        = "adevopsbeginner"
 
-iam_instance_profile_name = "eks-access-role"
+iam_instance_profile_name = "eks-node-instance-profile"
