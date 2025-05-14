@@ -8,6 +8,6 @@ resource "tls_private_key" "ed25519" {
 }
 
 resource "aws_key_pair" "t_abeginner" {
-  key_name   = "t_abeginner_ed25519"
+  key_name   = "${var.this_name}_ed25519"
   public_key = tls_private_key.ed25519.public_key_openssh
 }
